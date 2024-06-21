@@ -1,0 +1,12 @@
+.p-1::first-line {
+  font-weight: bold;
+}
+
+.p-2::first-line {
+  color: pink;
+}
+
+.p-3::first-line {
+  text-decoration: underline blue;
+  color: aquamarine;
+}
