@@ -1,0 +1,12 @@
+body {
+  border: 5px;
+  border-style: groove;
+  border-color: aqua;
+}
+
+p {
+  margin: 50px;
+  border: 4px;
+  border-style: dotted;
+  border-color: blueviolet;
+}
