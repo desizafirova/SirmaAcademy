@@ -1,0 +1,14 @@
+a[href="https://example.com"]:link
+{
+  color: purple;
+}
+
+a[href="https://example.com"]:hover
+{
+  color: aquamarine;
+}
+
+a[href="https://another.com"]:link
+{
+  color: lightblue;
+}
