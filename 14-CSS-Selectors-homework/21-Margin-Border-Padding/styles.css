@@ -1,0 +1,6 @@
+.box-model {
+  margin: 70px;
+  border: 2px;
+  padding: 20px;
+  background-color: lightpink;
+}
