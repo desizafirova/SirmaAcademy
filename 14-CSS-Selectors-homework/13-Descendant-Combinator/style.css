@@ -1,0 +1,6 @@
+div p {
+  display: inline-block;
+  color: blue;
+  padding: 5px;
+  border: 1px solid lightcoral;
+}
