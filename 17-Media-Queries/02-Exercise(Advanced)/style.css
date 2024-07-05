@@ -1,0 +1,105 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav {
+  background-color: #444;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  margin: 1rem;
+}
+
+.section {
+  background-color: #ddd;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+@media (max-width: 599px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1399px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 90fr;
+    padding: 2rem;
+    column-gap: 2rem;
+    row-gap: 0;
+  }
+
+  a {
+    display: inline;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-left: 10rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  nav {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
