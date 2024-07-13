@@ -6,16 +6,33 @@
   </head>
   <body>
     <table id="sampleTable" border="1">
-      <tr>
-        <td>Row1 cell1</td>
-        <td>Row1 cell2</td>
-      </tr>
-      <tr>
-        <td>Row2 cell1</td>
-        <td>Row2 cell2</td>
-      </tr>
+      <tbody>
+        <tr>
+          <td>Row1 cell1</td>
+          <td>Row1 cell2</td>
+        </tr>
+        <tr>
+          <td>Row2 cell1</td>
+          <td>Row2 cell2</td>
+        </tr>
+      </tbody>
     </table>
     <br />
     <input type="button" onclick="insertRow()" value="Insert row" />
+
+    <script>
+      function insertRow() {
+        const tableBodyElement = document.querySelector('#sampleTable > tbody');
+        const rowCount = tableBodyElement.children.length;
+        const firstTdElement = document.createElement('td');
+        firstTdElement.textContent = `Row${rowCount + 1} cell1`;
+        const secondTdElement = document.createElement('td');
+        secondTdElement.textContent = `Row${rowCount + 1} cell2`;
+        const rowElement = document.createElement('tr');
+        rowElement.appendChild(firstTdElement);
+        rowElement.appendChild(secondTdElement);
+        tableBodyElement.appendChild(rowElement);
+      }
+    </script>
   </body>
 </html>
