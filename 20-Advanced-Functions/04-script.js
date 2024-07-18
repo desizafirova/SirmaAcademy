@@ -6,7 +6,7 @@ function double(num) {
 }
 
 function square(num) {
-  return Math.sqrt(num);
+  return num * num;
 }
 
 function compose(...funcs) {
