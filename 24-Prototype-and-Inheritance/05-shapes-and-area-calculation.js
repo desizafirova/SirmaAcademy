@@ -1,15 +1,3 @@
-/*
-Shapes and Area Calculation
-Create a class hierarchy where Shape is the base class with a calculateArea method. Create Triangle, Square, and Circle classes that inherit from Shape and implement their own calculateArea methods.
-
-Shape with a calculateArea method
-Triangle
-Square
-Circle
-inherit from Shape and implement their own calculateArea methods
-
-*/
-
 class Shape {
   calculateArea() {}
 }
