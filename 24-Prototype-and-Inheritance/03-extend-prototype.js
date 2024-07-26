@@ -21,3 +21,6 @@ extendPrototype(Person);
 
 let pesho = new Person('Pesho', 25, 'Skating');
 console.log(pesho.toSpeciesString());
+
+let kiko = new Person('Kiko', 20, 'Programming');
+console.log(kiko.toSpeciesString());
